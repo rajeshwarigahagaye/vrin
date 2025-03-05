@@ -353,6 +353,11 @@ img {
 
 }
 
+.foot h6 {
+    font-size: 50px;
+    color: rgb(154, 153, 153);
+}
+
 @media (max-width:1118px) {
     nav .logo {
         left: 8%;
