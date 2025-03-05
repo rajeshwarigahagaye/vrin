@@ -2,8 +2,8 @@
 
 
 body {
-    height: 1000%;
-    width: 1000;
+    height: 100%;
+    width: 100%;
     padding: 2px;
     background-color: rgb(2, 144, 208);
     overflow-x: hidden;
@@ -343,8 +343,8 @@ img {
 }
 
 .foot {
-    position: absolute;
-    top: 1850px;
+    position: relative;
+    top: 200px;
     height: 300px;
     width: 100%;
     color: white;
@@ -354,9 +354,9 @@ img {
 
 .foot h6 {
     position: relative;
-    padding: 20px;
+    padding: 16px;
     font-weight: 100;
-    bottom: 100px;
+    bottom: 10px;
     font-family: 'Courier New', Courier, monospace;
     font-size: 50px;
 
@@ -380,7 +380,7 @@ img {
 
 .foot p {
     position: relative;
-    bottom: 180px;
+    bottom: 90px;
     font-size: 20px;
     padding-left: 20px;
 
@@ -544,9 +544,6 @@ img {
 
     }
 
-    .foot {
-        position: relative;
-    }
 
     .videotemp {
         display: flex;
@@ -555,20 +552,27 @@ img {
         height: 100px;
     }
 
+    .videotemp .vedio {
+        border: none;
+        position: relative;
+        right: 5px;
+    }
+
     .videotemp .vedio video {
         display: inline-block;
+
         width: 450px;
         height: 300px;
         position: relative;
-        left: 50px;
+
     }
 
     .videotemp .paragraph {
         position: relative;
-        left: 47px;
         display: flex;
         flex-direction: column;
         width: 370px;
+        right: 5%;
         height: 280px;
         top: 10px;
         padding: 38px;
@@ -593,28 +597,27 @@ img {
 
     .logo1 {
         position: relative;
-        top: 590px;
-        width: 390px;
-        height: 270px;
+        top: 630px;
+        left: 30px;
+        width: 430px;
+        height: 300px;
     }
 
     .logo1 img {
         height: 250px;
         width: 250px;
         position: relative;
-        bottom: 50px;
-        left: 30px;
-        height: "250px";
-        width: "500px";
+        bottom: 30px;
+        left: 80px;
         mix-blend-mode: darken;
     }
 
     .para2 {
         font-size: 20px;
         position: relative;
-        bottom: 40px;
+        bottom: 90px;
         line-height: 0.3;
-        left: 150px;
+        left: 5px;
         height: 300px;
         z-index: 1;
     }
@@ -624,7 +627,15 @@ img {
     }
 
     .para2 p {
+        line-height: 1;
         font-size: 20px;
     }
+
+    .foot {
+        position: relative;
+        height: 350px;
+        top: 600px;
+    }
+
 
 }
