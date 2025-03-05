@@ -291,7 +291,7 @@ img {
 
 .logo1 {
     position: relative;
-    top: 180px;
+    top: 260px;
     align-items: center;
     height: 300px;
     width: 100%;
@@ -343,20 +343,63 @@ img {
 }
 
 .foot {
-    margin: none;
-    padding: 12px;
     position: absolute;
     top: 1850px;
     height: 300px;
     width: 100%;
-    background-color: rgb(47, 159, 123);
-
+    color: white;
+    background-color: rgb(0, 10, 89);
+    text-transform: capitalize;
 }
 
 .foot h6 {
+    position: relative;
+    padding: 20px;
+    font-weight: 100;
+    bottom: 100px;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 50px;
-    color: rgb(154, 153, 153);
+
+
 }
+
+.icons {
+    position: absolute;
+    right: 130px;
+    bottom: 5px;
+    font-size: 50px;
+    font-weight: lighter;
+
+
+}
+
+.icons a {
+    color: white;
+    text-decoration: underline;
+}
+
+.foot p {
+    position: relative;
+    bottom: 180px;
+    font-size: 20px;
+    padding-left: 20px;
+
+}
+
+.foot p a {
+
+    color: #ffffff;
+}
+
+.foot a:hover {
+    color: aqua;
+
+}
+
+.foot p span {
+    text-decoration: underline;
+}
+
 
 @media (max-width:1118px) {
     nav .logo {
