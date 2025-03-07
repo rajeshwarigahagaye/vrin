@@ -206,7 +206,7 @@ button:hover i {
 }
 
 
-nav .login {
+/* nav .login {
     position: relative;
     left: 650px;
     top: 14px;
@@ -230,7 +230,7 @@ nav .login:hover {
     background-color: black;
     color: rgb(255, 255, 255);
 
-}
+} */
 
 .para {
     position: relative;
