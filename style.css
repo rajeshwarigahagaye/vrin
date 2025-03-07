@@ -32,7 +32,7 @@ body {
 .navbar {
     z-index: 1;
     position: relative;
-    min-height: 15%;
+    height: 13%;
     width: 100%;
     background-color: white;
     justify-content: center;
@@ -41,11 +41,10 @@ body {
 
 nav ul {
     max-width: 100%;
-    position: absolute;
-    top: 10px;
+    position: relative;
+    top: 10rem;
     text-align: center;
-    display: flex;
-    flex-direction: row;
+
     list-style: none;
     padding: 13px 9px;
 }
@@ -53,17 +52,19 @@ nav ul {
 .logo img {
     z-index: 1;
     position: absolute;
-    left: 10px;
-    top: 10px;
+    left: 1rem;
+    top: 0rem;
     height: auto;
-    max-width: 10rem;
+    max-width: 9rem;
     mix-blend-mode: darken;
 }
 
 nav ul li {
+    display: inline-block;
+    line-height: 8rem;
     position: relative;
-    top: 8rem;
-    left: 10rem;
+    bottom: 6rem;
+    right: 34rem;
 }
 
 nav ul li a {
@@ -76,9 +77,10 @@ nav ul li a {
     font-size: 2rem;
     font-weight: 200;
     font-style: normal;
+
     text-decoration: none;
     text-transform: capitalize;
-    padding: 15px;
+    padding: 1.5rem;
     text-align: center;
     justify-content: space-between;
 }
@@ -121,7 +123,8 @@ label #cancel {
 
 .search {
     position: relative;
-    bottom: 1rem;
+    bottom: 20rem;
+    left: 41rem;
     padding-left: .5rem;
     display: flex;
     min-width: 15rem;
@@ -306,9 +309,10 @@ nav .login:hover {
     top: 24rem;
     padding: 0 0 1rem 2rem;
     margin: 10px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    display: inline;
+
+    flex-wrap: wrap;
+
 }
 
 .videotemp .vedio {
@@ -320,23 +324,21 @@ nav .login:hover {
 
 .videotemp .vedio video {
     max-height: 40rem;
-    max-width: 70rem;
     border: solid white 4px;
     border-radius: 1rem;
-    display: grid;
     max-width: 65rem;
     justify-content: space-around;
 }
 
 .videotemp .paragraph {
     position: absolute;
-    right: 0;
+    left: 66rem;
     display: inline-block;
     top: .8rem;
     padding-left: 1rem;
     margin: 0;
-    height: 40rem;
-    min-width: clamp(75rem, 100%, 75ch);
+    height: 30rem;
+    min-width: clamp(68rem, 100%, 75ch);
     box-sizing: border-box;
     border: 4px dashed black;
     border-radius: 1rem;
@@ -346,7 +348,7 @@ nav .login:hover {
 }
 
 .videotemp .paragraph h1 {
-    font-size: clamp(2rem, 1rem + 2vw, 7rem);
+    font-size: clamp(1rem, 1rem + 2vw, 5rem);
     text-decoration: underline;
     padding-top: 1rem;
     margin: 0;
@@ -506,35 +508,29 @@ nav .login:hover {
     }
 }
 
-@media (max-width:860px) {
+@media(max-width:660px) {
     label #btn {
         display: block;
     }
 
     ul {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
+
+        position: relative;
+        min-width: 100%;
+        min-height: 100vh;
+        top: 8rem;
         background: rgb(13, 80, 129);
-        display: flex;
-        flex-direction: column;
-        left: -100%;
-        text-align: center;
+        left: -120%;
         transition: all .5s;
     }
 
-    ul li {
+    nav ul li {
         position: relative;
-
         margin: 4.5rem 0;
         line-height: 3rem;
+        display: block;
+        padding: 3rem;
 
-    }
-
-    nav .logo {
-        left: 6%;
-        top: 2rem;
-        width: 13rem;
     }
 
     .search {
@@ -542,11 +538,12 @@ nav .login:hover {
     }
 
     nav ul li a {
+        margin: 0;
+        top: .3rem;
         color: white;
-        text-align: center;
         position: relative;
-        left: 4%;
-        font-size: 20px;
+        right: 1%;
+        font-size: 2rem;
     }
 
     nav ul li a::before {
@@ -554,6 +551,7 @@ nav .login:hover {
         content: '';
         bottom: 0;
         height: 3px;
+        margin: 0%;
         width: 100%;
         background: rgb(45, 216, 105);
         left: 0;
@@ -574,12 +572,37 @@ nav .login:hover {
         left: 0;
     }
 
-    #check:checked~#btn {
+    #check:checked~label #btn {
         display: none;
     }
 
-    #check:checked~label i:before {
+    #check:checked~label #cancel {
         content: "\f00d";
+        display: block;
+    }
+
+    .temp #temp {
+        display: none;
+    }
+
+    .temp1 {
+
+        position: relative;
+        bottom: 2rem;
+    }
+
+    .videotemp {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-height: auto;
+    }
+
+    .vedio video {
+        position: absolute;
+        display: grid;
+        min-width: 100%;
+        min-height: auto;
     }
 
 
