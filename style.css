@@ -29,6 +29,7 @@ body {
     background: linear-gradient(rgb(23, 179, 33), rgb(20, 222, 124));
 }
 
+
 .navbar {
     z-index: 1;
     position: relative;
@@ -71,18 +72,14 @@ nav ul li a {
     position: relative;
     bottom: 4rem;
     left: 36rem;
-    align-items: center;
-    text-align: center;
     color: rgb(0, 0, 0);
     font-size: 2rem;
     font-weight: 200;
-    font-style: normal;
 
     text-decoration: none;
     text-transform: capitalize;
     padding: 1.5rem;
-    text-align: center;
-    justify-content: space-between;
+
 }
 
 nav ul li a::before {
@@ -209,32 +206,6 @@ button:hover i {
 }
 
 
-/* nav .login {
-    position: relative;
-    left: 650px;
-    top: 14px;
-    padding-top: 5px;
-    width: 75px;
-
-    text-align: center;
-    height: 30px;
-    border: black 1px solid;
-    outline: 2px solid rgb(65, 146, 171);
-    border-radius: 10px;
-    background-color: rgb(65, 146, 171);
-
-    color: black;
-    font-size: 17px;
-    font-weight: 33px;
-    font-style: none;
-}
-
-nav .login:hover {
-    background-color: black;
-    color: rgb(255, 255, 255);
-
-} */
-
 .para {
     position: relative;
     top: 10rem;
@@ -309,36 +280,41 @@ nav .login:hover {
     top: 24rem;
     padding: 0 0 1rem 2rem;
     margin: 10px;
-    display: inline;
-
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1rem;
     flex-wrap: wrap;
 
 }
 
 .videotemp .vedio {
+
     height: 40rem;
     object-fit: cover;
-    width: 70rem;
+    width: 100%;
     flex: 20rem;
+
 }
 
 .videotemp .vedio video {
+    gap: 2rem;
     max-height: 40rem;
     border: solid white 4px;
     border-radius: 1rem;
     max-width: 65rem;
+    display: flex;
     justify-content: space-around;
 }
 
 .videotemp .paragraph {
     position: absolute;
-    left: 66rem;
-    display: inline-block;
+    left: 69rem;
+    display: block;
     top: .8rem;
     padding-left: 1rem;
     margin: 0;
     height: 30rem;
-    min-width: clamp(68rem, 100%, 75ch);
+    min-width: clamp(62rem, 100%, 75ch);
     box-sizing: border-box;
     border: 4px dashed black;
     border-radius: 1rem;
@@ -509,6 +485,8 @@ nav .login:hover {
 }
 
 @media(max-width:660px) {
+
+
     label #btn {
         display: block;
     }
@@ -527,7 +505,7 @@ nav .login:hover {
     nav ul li {
         position: relative;
         margin: 4.5rem 0;
-        line-height: 3rem;
+        line-height: 1rem;
         display: block;
         padding: 3rem;
 
@@ -591,18 +569,16 @@ nav .login:hover {
         bottom: 2rem;
     }
 
-    .videotemp {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        min-height: auto;
+    .vediotemp {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+
     }
 
-    .vedio video {
-        position: absolute;
-        display: grid;
-        min-width: 100%;
-        min-height: auto;
+    .vediotemp #card {
+        width: 100%;
+        height: 20vh;
+        grid-column: span 2;
     }
 
 
