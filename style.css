@@ -810,9 +810,9 @@ a {
 
 
 @media(max-width:400px) {
-    body {
+    /* body {
         background: #123c56;
-    }
+    } */
 
     .marquee {
         display: block;
@@ -1002,7 +1002,7 @@ a {
     .four {
         height: 30rem;
         position: relative;
-        top: 30rem;
+        top: 37rem;
     }
 
     .four img {
@@ -1031,7 +1031,7 @@ a {
 
 
     .five {
-        height: 60rem;
+        height: 63rem;
         position: relative;
     }
 
