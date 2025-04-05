@@ -157,11 +157,6 @@ label #cancel {
 
 @media(max-width:575.98px) {
 
-    .marquee {
-        display: block;
-
-    }
-
     label #btn {
         display: block;
     }
