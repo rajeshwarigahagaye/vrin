@@ -403,9 +403,9 @@ label #cancel {
 }
 
 @media(max-width:900px) {
-    body {
+    /* body {
         background: #033f5b;
-    }
+    } */
 
     .main {
         flex-direction: column;
@@ -421,9 +421,9 @@ label #cancel {
 }
 
 @media(max-width:500px) {
-    body {
+    /* body {
         background: #4a25b8;
-    }
+    } */
 
     .footp {
         font-size: .7rem;
