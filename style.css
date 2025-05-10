@@ -1063,30 +1063,13 @@ a {
         flex-wrap: wrap;
     }
 
+    .footera {
+        display: block;
+    }
+
     .foot {
-        position: absolute;
-        bottom: 10rem;
-        padding: 0;
-        margin: 0;
-
-
+        display: none;
     }
-
-
-    .foot .footp p {
-
-        border: #123c56 2px so;
-        max-width: 400px;
-        display: flex;
-        flex-wrap: wrap;
-        word-spacing: .1rem;
-        padding: .6%;
-        margin: 0;
-        position: relative;
-        top: 1.2rem;
-        font-size: .78rem;
-    }
-
 
     .five .icons {
         font-size: 3rem;
